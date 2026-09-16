@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#25070d">
+
+    <title>Mis 18 Años — Alejandra Hernández</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         FONDO
+    ====================================================== -->
+
+    <div class="background" aria-hidden="true">
+
+        <div class="background-texture"></div>
+
+        <div class="wine-glow glow-one"></div>
+        <div class="wine-glow glow-two"></div>
+        <div class="wine-glow glow-three"></div>
+
+        <div id="particles"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SOBRE DE APERTURA
+    ====================================================== -->
+
+    <section class="envelope-screen" id="envelopeScreen">
+
+        <div class="opening-title">
+            <span>Una invitación especial</span>
+            <strong>para ti</strong>
+        </div>
+
+
+        <div class="envelope-wrapper">
+
+            <div class="envelope" id="envelope">
+
+                <!-- Tarjeta dentro del sobre -->
+                <div class="envelope-card">
+
+                    <span class="card-small">
+                        ESTÁS INVITADO/A A
+                    </span>
+
+                    <strong>
+                        Mis 18 Años
+                    </strong>
+
+                    <span class="card-name">
+                        Alejandra Hernández
+                    </span>
+
+                </div>
+
+
+                <!-- Parte trasera -->
+                <div class="envelope-back"></div>
+
+
+                <!-- Solapa -->
+                <div class="envelope-flap">
+                    <div class="flap-inner"></div>
+                </div>
+
+
+                <!-- Frente -->
+                <div class="envelope-front">
+
+                    <div class="envelope-line"></div>
+
+                    <div class="wax-seal">
+                        A
+                    </div>
+
+                </div>
+
+
+                <div class="envelope-ornament ornament-top">
+                    ❦
+                </div>
+
+                <div class="envelope-ornament ornament-bottom">
+                    ❦
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="open-button"
+            id="openInvitation"
+            type="button"
+        >
+            <span>Abrir invitación</span>
+            <span class="button-arrow">✦</span>
+        </button>
+
+
+        <p class="opening-hint">
+            Haz clic para descubrir la invitación
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         INVITACIÓN
+    ====================================================== -->
+
+    <main class="invitation-container" id="invitation">
+
+        <!-- Marco dorado -->
+        <div class="gold-frame">
+
+            <div class="frame-corner corner-tl">❧</div>
+            <div class="frame-corner corner-tr">❧</div>
+            <div class="frame-corner corner-bl">❧</div>
+            <div class="frame-corner corner-br">❧</div>
+
+        </div>
+
+
+        <!-- =================================================
+             DECORACIONES BARROCAS
+        ================================================== -->
+
+        <div class="baroque-elements" aria-hidden="true">
+
+            <!-- Luna -->
+            <div class="moon-decoration">
+
+                <div class="crescent-moon"></div>
+
+                <span class="moon-star star-1">✦</span>
+                <span class="moon-star star-2">✧</span>
+                <span class="moon-star star-3">✦</span>
+                <span class="moon-star star-4">·</span>
+                <span class="moon-star star-5">✧</span>
+
+            </div>
+
+
+            <!-- Querubín izquierdo -->
+            <div class="cherub cherub-left">
+
+                <div class="halo"></div>
+                <div class="cherub-head"></div>
+                <div class="cherub-hair"></div>
+                <div class="cherub-body"></div>
+
+                <div class="cherub-arm arm-left"></div>
+                <div class="cherub-arm arm-right"></div>
+
+                <div class="wing wing-left"></div>
+                <div class="wing wing-right"></div>
+
+            </div>
+
+
+            <!-- Querubín derecho -->
+            <div class="cherub cherub-right">
+
+                <div class="halo"></div>
+                <div class="cherub-head"></div>
+                <div class="cherub-hair"></div>
+                <div class="cherub-body"></div>
+
+                <div class="cherub-arm arm-left"></div>
+                <div class="cherub-arm arm-right"></div>
+
+                <div class="wing wing-left"></div>
+                <div class="wing wing-right"></div>
+
+            </div>
+
+
+            <!-- Candelabro izquierdo -->
+            <div class="candelabra candelabra-left">
+
+                <div class="candle candle-1">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle candle-2">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle candle-3">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle-arm arm-a"></div>
+                <div class="candle-arm arm-b"></div>
+
+                <div class="candle-neck"></div>
+                <div class="candle-base"></div>
+
+            </div>
+
+
+            <!-- Candelabro derecho -->
+            <div class="candelabra candelabra-right">
+
+                <div class="candle candle-1">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle candle-2">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle candle-3">
+                    <span class="flame"></span>
+                </div>
+
+                <div class="candle-arm arm-a"></div>
+                <div class="candle-arm arm-b"></div>
+
+                <div class="candle-neck"></div>
+                <div class="candle-base"></div>
+
+            </div>
+
+
+            <!-- Libros -->
+            <div class="old-books books-left">
+
+                <span class="book book-one"></span>
+                <span class="book book-two"></span>
+                <span class="book book-three"></span>
+
+            </div>
+
+
+            <div class="old-books books-right">
+
+                <span class="book book-one"></span>
+                <span class="book book-two"></span>
+                <span class="book book-three"></span>
+
+            </div>
+
+
+            <div class="baroque-ornament ornament-left">
+                ❦
+            </div>
+
+            <div class="baroque-ornament ornament-right">
+                ❦
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             GRAN LAZO
+        ================================================== -->
+
+        <div class="top-bow" aria-hidden="true">
+
+            <div class="bow-loop bow-left"></div>
+            <div class="bow-loop bow-right"></div>
+
+            <div class="bow-knot"></div>
+
+            <div class="bow-tail tail-left"></div>
+            <div class="bow-tail tail-right"></div>
+
+            <div class="heart-medallion">
+                A
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PARCHMENT
+        ================================================== -->
+
+        <article class="parchment">
+
+            <div class="parchment-border"></div>
+
+            <span class="parchment-ornament p-top-left">❧</span>
+            <span class="parchment-ornament p-top-right">❧</span>
+
+            <span class="parchment-ornament p-bottom-left">❧</span>
+            <span class="parchment-ornament p-bottom-right">❧</span>
+
+
+
+            <!-- Flores -->
+            <div class="floral-cluster floral-left" aria-hidden="true">
+
+                <span class="rose rose-a"></span>
+                <span class="rose rose-b"></span>
+                <span class="rose rose-c"></span>
+
+                <span class="leaf leaf-a"></span>
+                <span class="leaf leaf-b"></span>
+                <span class="leaf leaf-c"></span>
+
+                <span class="stem"></span>
+
+            </div>
+
+
+            <div class="floral-cluster floral-right" aria-hidden="true">
+
+                <span class="rose rose-a"></span>
+                <span class="rose rose-b"></span>
+                <span class="rose rose-c"></span>
+
+                <span class="leaf leaf-a"></span>
+                <span class="leaf leaf-b"></span>
+                <span class="leaf leaf-c"></span>
+
+                <span class="stem"></span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONTENIDO
+            ================================================== -->
+
+            <div class="parchment-content">
+
+
+                <p class="eyebrow reveal-text reveal-1">
+                    CON GRAN ALEGRÍA
+                </p>
+
+
+                <h1 class="reveal-text reveal-2">
+
+                    <span class="title-small">
+                        Mis
+                    </span>
+
+                    <span class="title-main">
+                        18 Años
+                    </span>
+
+                </h1>
+
+
+                <div class="title-ornament reveal-text reveal-3">
+
+                    <span></span>
+                    <strong>✦</strong>
+                    <span></span>
+
+                </div>
+
+
+                <p class="intro reveal-text reveal-4">
+
+                    Hay momentos que merecen ser celebrados
+                    y compartidos con las personas que hacen
+                    nuestra vida más especial.
+
+                </p>
+
+
+                <p class="name reveal-text reveal-5">
+                    Alejandria Hernández
+                </p>
+
+
+                <p class="invitation-text reveal-text reveal-6">
+
+                    Tiene el honor de invitarte a celebrar junto a ella
+                    la llegada de sus <strong>18 años</strong>.
+
+                </p>
+
+
+
+                <!-- =================================================
+                     INFORMACIÓN DEL EVENTO
+                ================================================== -->
+
+                <section
+                    class="event-information reveal-text reveal-7"
+                    aria-label="Información de la celebración"
+                >
+
+                    <div class="event-block">
+
+                        <span class="event-icon">
+                            ✦
+                        </span>
+
+                        <small>
+                            FECHA
+                        </small>
+
+                        <strong>
+                            17 de julio de 2027
+                        </strong>
+
+                    </div>
+
+
+                    <div class="event-divider">
+                        ❦
+                    </div>
+
+
+                    <div class="event-block">
+
+                        <span class="event-icon">
+                            ♜
+                        </span>
+
+                        <small>
+                            LUGAR
+                        </small>
+
+                        <strong>
+                            El Guaricano
+                        </strong>
+
+                    </div>
+
+
+                    <div class="event-divider">
+                        ❦
+                    </div>
+
+
+                    <div class="event-block">
+
+                        <span class="event-icon">
+                            ◷
+                        </span>
+
+                        <small>
+                            HORA DE LLEGADA
+                        </small>
+
+                        <strong>
+                            6:30 P.M.
+                        </strong>
+
+                    </div>
+
+
+                    <div class="event-divider">
+                        ❦
+                    </div>
+
+
+                    <div class="event-block">
+
+                        <span class="event-icon">
+                            ♛
+                        </span>
+
+                        <small>
+                            INICIO DE LA FIESTA
+                        </small>
+
+                        <strong>
+                            7:00 P.M.
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     CÓDIGO DE VESTIMENTA
+                ================================================== -->
+
+                <section class="dress-code reveal-text reveal-8">
+
+                    <span class="dress-icon">
+                        ✧
+                    </span>
+
+                    <small>
+                        CÓDIGO DE VESTIMENTA
+                    </small>
+
+                    <strong>
+                        No vestir de rojo
+                    </strong>
+
+                    <p>
+                        Te agradeceríamos evitar cualquier prenda
+                        de color rojo.
+                    </p>
+
+                </section>
+
+
+
+                <p class="closing-text reveal-text reveal-9">
+
+                    Tu presencia hará que esta noche
+                    sea todavía más especial.
+
+                </p>
+
+
+                <div class="heart reveal-text reveal-10">
+                    ♥
+                </div>
+
+
+
+                <!-- =================================================
+                     CONFIRMACIÓN
+                ================================================== -->
+
+                <section
+                    class="rsvp reveal-text reveal-11"
+                    id="rsvpSection"
+                >
+
+                    <div class="rsvp-ornament">
+                        ❦
+                    </div>
+
+                    <h2>
+                        Confirma tu asistencia
+                    </h2>
+
+                    <p>
+                        Será un placer contar contigo
+                        en esta celebración.
+                    </p>
+
+
+                    <div class="phone-list">
+
+                        <a href="tel:+18292883437">
+                            829-288-3437
+                        </a>
+
+                        <a href="tel:+18495225982">
+                            (849) 522-5982
+                        </a>
+
+                    </div>
+
+
+                    <button
+                        class="rsvp-button"
+                        id="confirmButton"
+                        type="button"
+                    >
+                        Confirmar por WhatsApp
+                    </button>
+
+
+                    <p
+                        class="rsvp-note"
+                        id="rsvpNote"
+                    ></p>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     PIE
+                ================================================== -->
+
+                <footer class="invitation-footer reveal-text reveal-12">
+
+                    <span>
+                        Con cariño
+                    </span>
+
+                    <strong>
+                        ♡ Alejandria ♡
+                    </strong>
+
+                </footer>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         CONTROL DE MÚSICA
+    ====================================================== -->
+
+    <div
+        class="music-control"
+        id="musicControl"
+    >
+
+        <audio id="bgMusic" loop preload="auto">
+    <source src="./Linkin Park - Iridescent - Official Instrumental [BSFkyJJLOjA].mp3" type="audio/mpeg">
+</audio>
+
+        <button
+            id="musicButton"
+            type="button"
+            aria-label="Reproducir música"
+            aria-pressed="false"
+        >
+
+            <span id="musicIcon">
+                ♫
+            </span>
+
+            <span id="musicText">
+                Música
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
